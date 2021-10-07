@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(153, 0, 255);
+}
+table {
+    margin-top: 130px;
+    color: white;
+    margin-left: 330px;
+}
+.contenedor {
+    margin: auto;
+    width: 500px;
+    height: 320px;
+    color: white;
+}
+.registrar {
+    margin-top: 20px;
+    height: 30px;
+    background: orange;
+    border:0; 
+    padding-left: 20px; 
+    color: #fff;
+    margin-bottom: 5px;
+}
+input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+table {
+    border-collapse: collapse;
+}
+td, th {
+    border: 1px solid black;
+    
+}
+h1 {
+    text-align: center;
+}

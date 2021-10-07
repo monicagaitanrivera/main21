@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio de registro de notas</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class='contenedor'>
+        <h1>Registros de Datos</h1>
+        <form action="#" method="POST">
+            <label>Nombre</label><input type="text" id="Nombre"><br>
+            <label>Apellido</label><input type="text" id="Apellido"><br>
+            <label>Direccion</label><input type="text" id="Direccion"><br>
+            <label>Telefono</label><input type="text" id="Telefono"><br>
+            <label>Correo</label><input type="text" id="Correo"><br>
+            <label>Contraseña</label><input type="text" id="Contraseña"><br>
+            <input type="button" value="Registrar" class="registrar" onclick="Registar_Notas();">
+        </form>
+    </div>
+
+    <table>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Direccion</th>
+        <th>Telefono</th>
+        <th>Correo</th>
+        <th>Contraseña</th>
+        <tbody id="Tabla">    
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+    var estudiantes=[];
+    function Registar_Notas(){
+        var Nombre=document.getElementById('Nombre').value;
+        var Apellido=document.getElementById('Apellido').value;
+        var Direccion=document.getElementById('Direccion').value;
+        var Telefono=document.getElementById('Telefono').value;
+        var Correo=document.getElementById('Correo').value;
+        var Contraseña=document.getElementById('Contraseña').value;
+    estudiantes.push (
+        {"Nombre":Nombre,"Apellido":Apellido,"Direccion":Direccion,"Telefono":Telefono,
+        "Correo":Correo,"Contraseña":Contraseña}
+    );
+  Listar_Notas();
+  document.getElementById('Nombre').value="";
+  document.getElementById('Apellido').value="";
+  document.getElementById('Direccion').value="";
+  document.getElementById('Telefono').value="";
+  document.getElementById('Correo').value="";
+  document.getElementById('Contraseña').value="";
+  document.get
+    }
+
+    function Listar_Notas(){
+        var Listado='<tr>';
+            for(var i=0;i<estudiantes.length;i++){
+                Listado +="<td>"+i+"</td>";
+                Listado +="<td>"+estudiantes[i].Nombre+"</td>";
+                Listado +="<td>"+estudiantes[i].Apellido+"</td>";
+                Listado +="<td>"+estudiantes[i].Direccion+"</td>";
+                Listado +="<td>"+estudiantes[i].Telefono+"</td>";
+                Listado +="<td>"+estudiantes[i].Correo+"</td>";
+                Listado +="<td>"+estudiantes[i].Contraseña+"</td>";
+                Listado +="</tr>";
+            }
+            document.getElementById('Tabla').innerHTML=Listado;
+        }
+  </script>
