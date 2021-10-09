@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+   
+        background-image: url(https://www.wallpapertip.com/wmimgs/15-152124_nature-sunset-wallpaper-hd.jpg);
+    
+}
+
+ul {
+    font-size: 1,6em;
+    text-align: right;
+    background: rgb(150, 179, 209) ;
+    font-family: Verdana, sans-serif;
+    font-weight: 600;
+    width: 600;
+    font-family: 'Ribeye Marrow', cursive;  
+    padding: 11px;
+    
+}
+li {
+    display: inline-block;
+    padding: 20px;
+}
+.menu-contactenos {
+    margin-right: 30px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    text-align: 80px;
+}
+a:hover {
+    font-size: 1.04em;
+
+}
